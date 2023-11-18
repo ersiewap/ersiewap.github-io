@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="container-fluid my-3 px-5">
-        <div class="display-3 fw-bold text-decoration-underline mb-4">Ticketing System</div>
+        <div class="display-2 fw-bold text-decoration-underline mb-4">Computer Software/Hardware Maintenance</div>
         <div class="row">
         <div class="row mx-1 g-3">
             <div class="col-lg-3 col-md-6">
@@ -41,7 +41,7 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between">
                             <i class="bi bi-pencil-square fs-1 text-warning"></i>
-                            <span class="fs-3 text-warning">3</span>
+                            <span class="fs-3 text-warning">5</span>
                         </div>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between">
                             <i class="bi bi-exclamation-diamond fs-1 text-danger"></i>
-                            <span class="fs-3 text-danger">3</span>
+                            <span class="fs-3 text-danger">5</span>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,322 @@
         </div>
         </div>
     </div>
-    <div class=" divider"></div>
+        <div class=" divider"></div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button bg-warning-subtle text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                On Process
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show  " data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                        <table class="table-hover table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Ticket No</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Requested By</th>
+                                <th scope="col">Department</th>
+                                <th scope="col">Date Requested</th>
+                                <th scope="col">Target Date</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">TIX-20231019</th>
+                                <td>Transfer of PC</td>
+                                <td>Junnel</td>
+                                <td>Sales Department</td>
+                                <td>2023-10-19</td>
+                                <td>2023-10-23</td>
+                                <td>Hardware Support</td>
+                                <td class="ongoing bg-warning text-dark" >ongoing</td>
+                                <td><button class="button bg-primary text-white">view</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">TIX-20231020</th>
+                                <td>Additional Module Access</td>
+                                <td>Bart Tatlongbibe</td>
+                                <td>HR Department</td>
+                                <td>2023-10-20</td>
+                                <td>2023-10-27</td>
+                                <td>Access Elevation</td>
+                                <td class="ongoing bg-warning text-dark">ongoing</td>
+                                <td><button class="button bg-primary text-white">view</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">TIX-20231022</th>
+                                <td>PC Problem</td>
+                                <td>Erika Weltz</td>
+                                <td>HR Department</td>
+                                <td>2023-10-22</td>
+                                <td>2023-10-26</td>
+                                <td>Hardware Support</td>
+                                <td class="ongoing bg-warning text-dark">ongoing</td>
+                                <td><button class="button bg-primary text-white">view</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">TIX-20231004</th>
+                                <td>New Report</td>
+                                <td>Samson Purenarya</td>
+                                <td>Accounting Department</td>
+                                <td>2023-10-04</td>
+                                <td>2023-10-10</td>
+                                <td>Software Module</td>
+                                <td class="ongoing bg-warning text-dark">ongoing overdue</td>
+                                <td><button class="button bg-primary text-white">view</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">TIX-20231010</th>
+                                <td>Bug Detected</td>
+                                <td>Davis Salon</td>
+                                <td>Accounting Department</td>
+                                <td>2023-10-10</td>
+                                <td>2023-10-16</td>
+                                <td>Software Module</td>
+                                <td class="ongoing bg-warning text-dark">ongoing overdue</td>
+                                <td><button class="button bg-primary text-white">view</button></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                </body>
+                </html>
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-body-secondary text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                    On Queue
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <table class="table-hover table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Ticket No</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Requested By</th>
+                                <th scope="col">Department</th>
+                                <th scope="col">Date Requested</th>
+                                <th scope="col">Target Date</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">TIX-20297755</th>
+                                <td>Hard Disk Replacement</td>
+                                <td>Mang Kepweng</td>
+                                <td>Sales Department</td>
+                                <td>2023-11-18</td>
+                                <td>2023-11-23</td>
+                                <td>Hardware Support</td>
+                                <td class="ongoing bg-secondary text-dark" >On Queue</td>
+                                <td><button class="button bg-primary text-white">view</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">TIX-20231020</th>
+                                <td>Windows 10 to 11 Upgrade</td>
+                                <td>Kenshin Himura</td>
+                                <td>HR Department</td>
+                                <td>2023-11-19</td>
+                                <td>2023-11-26</td>
+                                <td>Software Support</td>
+                                <td class="ongoing bg-secondary text-dark">On Queue</td>
+                                <td><button class="button bg-primary text-white">view</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">TIX-2029877</th>
+                                <td>Power Supply Unit Replacement</td>
+                                <td>Chester Bennington</td>
+                                <td>Accounting Department</td>
+                                <td>2023-11-23</td>
+                                <td>2023-11-28</td>
+                                <td>Hardware Support</td>
+                                <td class="ongoing bg-secondary text-dark">On Queue</td>
+                                <td><button class="button bg-primary text-white">view</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">TIX-2029877</th>
+                                <td>HMDI/VGA Wire Replacement</td>
+                                <td>Sabel Tatlongpipi</td>
+                                <td>Accounting Department</td>
+                                <td>2023-11-23</td>
+                                <td>2023-11-29</td>
+                                <td>Hardware Support</td>
+                                <td class="ongoing bg-secondary text-dark">On Queue</td>
+                                <td><button class="button bg-primary text-white">view</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">TIX-2029877</th>
+                                <td>Sudden Blue Screen of PC</td>
+                                <td>Cardo Dalisay</td>
+                                <td>Security Department</td>
+                                <td>2023-11-19</td>
+                                <td>2023-10-24</td>
+                                <td>Hardware Support</td>
+                                <td class="ongoing bg-secondary text-dark">On Queue</td>
+                                <td><button class="button bg-primary text-white">view</button></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-danger-subtle text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Overdue
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <table class="table-hover table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Ticket No</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Requested By</th>
+                            <th scope="col">Department</th>
+                            <th scope="col">Date Requested</th>
+                            <th scope="col">Target Date</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">TIX-20239284</th>
+                            <td>Change of Ram</td>
+                            <td>Joe Mama</td>
+                            <td>Security Department</td>
+                            <td>2023-11-01</td>
+                            <td>2023-11-18</td>
+                            <td>Hardware Replacement</td>
+                            <td class="ongoing bg-danger     text-dark" >Overdue</td>
+                            <td><button class="button bg-primary text-white">view</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">TIX-20245854</th>
+                            <td>Installment of MS Office</td>
+                            <td>Annie Batumbakal</td>
+                            <td>HR Department</td>
+                            <td>2023-11-02</td>
+                            <td>2023-11-17</td>
+                            <td>Installion of MS Office</td>
+                            <td class="ongoing bg-danger text-dark">Overdue</td>
+                            <td><button class="button bg-primary text-white">view</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">TIX-20255793</th>
+                            <td>BLUE SCREEN OF DEATH</td>
+                            <td>Bitoy Dimagiba</td>
+                            <td>Accounting Department</td>
+                            <td>2023-10-07</td>
+                            <td>2023-10-12</td>
+                            <td>Hardware Support</td>
+                            <td class="ongoing bg-danger text-dark">Overdue</td>
+                            <td><button class="button bg-primary text-white">view</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">TIX-20287951</th>
+                            <td>New Report</td>
+                            <td>Imong Mama</td>
+                            <td>Basta Department</td>
+                            <td>2023-11-04</td>
+                            <td>2023-11-10</td>
+                            <td>Software Module</td>
+                            <td class="ongoing bg-danger text-dark">Overdue</td>
+                            <td><button class="button bg-primary text-white">view</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">TIX-20234585</th>
+                            <td>Windows Upgrade</td>
+                            <td>Julie Bakeshop</td>
+                            <td>Accounting Department</td>
+                            <td>2023-10-10</td>
+                            <td>2023-10-16</td>
+                            <td>Software Module</td>
+                            <td class="ongoing bg-danger text-dark">Overdue</td>
+                            <td><button class="button bg-primary text-white">view</button></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-success-subtle text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Completed
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <table class="table-hover table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Ticket No</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Requested By</th>
+                            <th scope="col">Department</th>
+                            <th scope="col">Date Requested</th>
+                            <th scope="col">Target Date</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">TIX-20297755</th>
+                            <td>Transfer of PC</td>
+                            <td>Mang Kanor</td>
+                            <td>Sales Department</td>
+                            <td>2023-11-14</td>
+                            <td>2023-11-18</td>
+                            <td>Hardware Support</td>
+                            <td class="ongoing bg-success text-dark" >ongoing</td>
+                            <td><button class="button bg-primary text-white">view</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">TIX-20231020</th>
+                            <td>Computer Reformat</td>
+                            <td>Dante Gulapa</td>
+                            <td>HR Department</td>
+                            <td>2023-10-20</td>
+                            <td>2023-10-24</td>
+                            <td>Software Support</td>
+                            <td class="ongoing bg-success text-dark">ongoing</td>
+                            <td><button class="button bg-primary text-white">view</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">TIX-2029877</th>
+                            <td>Monitor Replacement</td>
+                            <td>Adbul Habul Salami</td>
+                            <td>Accounting Department</td>
+                            <td>2023-10-23</td>
+                            <td>2023-10-28</td>
+                            <td>Hardware Support</td>
+                            <td class="ongoing bg-success text-dark">ongoing</td>
+                            <td><button class="button bg-primary text-white">view</button></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+    
     
     <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
 </body>
