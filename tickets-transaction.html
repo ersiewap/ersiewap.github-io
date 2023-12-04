@@ -12,13 +12,15 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
     <title></title>
-
+    
+    
 </head>
 <body>
     <div class="container-fluid my-3 px-5">
-        <div class="display-2 fw-bold text-decoration-underline mb-4">Computer Software/Hardware Maintenance</div>
+        <div class="display-3 fw-bold text-decoration-underline mb-2">Computer Software/Hardware Maintenance Record Holder</div>
         <div class="row">
         <div class="row mx-1 g-3">
+            <!-- complete card -->
             <div class="col-lg-3 col-md-6">
                 <div class="card">
                     <div class="card-header text-bg-success">
@@ -33,6 +35,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
+                <!-- on process card -->
                 <div class="card">
                     <div class="card-header text-bg-warning">
                         On Process
@@ -46,6 +49,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
+                <!-- on queue care -->
                 <div class="card ">
                     <div class="card-header text-bg-secondary">
                         On Queue
@@ -53,12 +57,13 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between">
                             <i class="bi bi-list-task fs-1 text-secondary"></i>
-                            <span class="fs-3 text-secondary">3</span>
+                            <span class="fs-3 text-secondary">5</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
+                <!-- overdue care -->
                 <div class="card">
                     <div class="card-header text-bg-danger">
                         Overdue
@@ -76,6 +81,7 @@
     </div>
         <div class=" divider"></div>
         <div class="accordion" id="accordionExample">
+            <!-- Onprocess TABLE -->
             <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button bg-warning-subtle text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -107,41 +113,57 @@
                                 <td>2023-10-19</td>
                                 <td>2023-10-23</td>
                                 <td>Hardware Support</td>
-                                <td class="ongoing bg-warning text-dark" >ongoing</td>
-                                <td><button class="button bg-primary text-white">view</button></td>
+                                <td class="align-middle" id="status"><span class="badge rounded-pill text-bg-warning me-1">ongoing</span>
+                                <td class="align-middle text-center">
+                                        <button class="btn btn-info view-ticket">view</button>
+                                        <button class="btn btn-warning ">Edit</button>
+                                        <button class="btn btn-danger ">Delete</button>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">TIX-20231020</th>
-                                <td>Additional Module Access</td>
+                                <td>Processor Replacement</td>
                                 <td>Bart Tatlongbibe</td>
                                 <td>HR Department</td>
                                 <td>2023-10-20</td>
                                 <td>2023-10-27</td>
-                                <td>Access Elevation</td>
-                                <td class="ongoing bg-warning text-dark">ongoing</td>
-                                <td><button class="button bg-primary text-white">view</button></td>
+                                <td>Hardware Replacement</td>
+                                <td class="align-middle" id="status"><span class="badge rounded-pill text-bg-warning me-1">ongoing</span>
+                                <td class="align-middle text-center">
+                                    <button class="btn btn-info view-ticket">view</button>
+                                    <button class="btn btn-warning ">Edit</button>
+                                    <button class="btn btn-danger ">Delete</button>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">TIX-20231022</th>
-                                <td>PC Problem</td>
+                                <td>PC automatic shutting down</td>
                                 <td>Kaila Jagoriles</td>
                                 <td>HR Department</td>
                                 <td>2023-10-22</td>
                                 <td>2023-10-26</td>
                                 <td>Hardware Support</td>
-                                <td class="ongoing bg-warning text-dark">ongoing</td>
-                                <td><button class="button bg-primary text-white">view</button></td>
+                                <td class="align-middle" id="status"><span class="badge rounded-pill text-bg-warning me-1">ongoing</span></td>
+                                <td class="align-middle text-center">
+                                    <button class="btn btn-info view-ticket">view</button>
+                                    <button class="btn btn-warning ">Edit</button>
+                                    <button class="btn btn-danger ">Delete</button>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">TIX-20231004</th>
-                                <td>New Report</td>
+                                <td>Pc Reformat</td>
                                 <td>Samson Purenarya</td>
                                 <td>Accounting Department</td>
                                 <td>2023-10-04</td>
                                 <td>2023-10-10</td>
-                                <td>Software Module</td>
-                                <td class="ongoing bg-warning text-dark">ongoing overdue</td>
-                                <td><button class="button bg-primary text-white">view</button></td>
+                                <td>Hardware Support</td>
+                                <td class="align-middle" id="status"><span class="badge rounded-pill text-bg-warning me-1">ongoing</span></td>
+                                <td class="align-middle text-center">
+                                    <button class="btn btn-info view-ticket">view</button>
+                                    <button class="btn btn-warning ">Edit</button>
+                                    <button class="btn btn-danger ">Delete</button>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">TIX-20231010</th>
@@ -150,9 +172,12 @@
                                 <td>Accounting Department</td>
                                 <td>2023-10-10</td>
                                 <td>2023-10-16</td>
-                                <td>Software Module</td>
-                                <td class="ongoing bg-warning text-dark">ongoing overdue</td>
-                                <td><button class="button bg-primary text-white">view</button></td>
+                                <td>Software Support</td>
+                                <td class="align-middle" id="status"><span class="badge rounded-pill text-bg-warning me-1">ongoing</span></td>
+                                <td class="align-middle text-center">
+                                    <button class="btn btn-info view-ticket">view</button>
+                                    <button class="btn btn-warning ">Edit</button>
+                                    <button class="btn btn-danger ">Delete</button>
                             </tr>
                             </tbody>
                         </table>
@@ -161,6 +186,7 @@
                 </div>
             </div>
             </div>
+            <!-- Onqueue TABLE -->
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed bg-body-secondary text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
@@ -191,9 +217,13 @@
                                 <td>Sales Department</td>
                                 <td>2023-11-18</td>
                                 <td>2023-11-23</td>
-                                <td>Hardware Support</td>
-                                <td class="ongoing bg-secondary text-dark" >On Queue</td>
-                                <td><button class="button bg-primary text-white">view</button></td>
+                                <td>Hardware Replacement</td>
+                                <td class="align-middle fs-6"><span class="badge rounded-pill text-bg-secondary">On Queue</span></td>
+                                    <td class="align-middle text-center">
+                                    <button class="btn btn-info view-ticket">view</button>
+                                    <button class="btn btn-warning ">Edit</button>
+                                    <button class="btn btn-danger ">Delete</button>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">TIX-20232223</th>
@@ -203,8 +233,12 @@
                                 <td>2023-11-19</td>
                                 <td>2023-11-26</td>
                                 <td>Software Support</td>
-                                <td class="ongoing bg-secondary text-dark">On Queue</td>
-                                <td><button class="button bg-primary text-white">view</button></td>
+                                <td class="align-middle fs-6"><span class="badge rounded-pill text-bg-secondary">On Queue</span></td>
+                                <td class="align-middle text-center">
+                                    <button class="btn btn-info view-ticket">view</button>
+                                    <button class="btn btn-warning ">Edit</button>
+                                    <button class="btn btn-danger ">Delete</button>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">TIX-2027811</th>
@@ -213,9 +247,13 @@
                                 <td>Accounting Department</td>
                                 <td>2023-11-23</td>
                                 <td>2023-11-28</td>
-                                <td>Hardware Support</td>
-                                <td class="ongoing bg-secondary text-dark">On Queue</td>
-                                <td><button class="button bg-primary text-white">view</button></td>
+                                <td>Hardware Replacement</td>
+                                <td class="align-middle fs-6"><span class="badge rounded-pill text-bg-secondary">On Queue</span></td>
+                                <td class="align-middle text-center">
+                                    <button class="btn btn-info view-ticket">view</button>
+                                    <button class="btn btn-warning ">Edit</button>
+                                    <button class="btn btn-danger ">Delete</button>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">TIX-202123654</th>
@@ -224,26 +262,35 @@
                                 <td>Accounting Department</td>
                                 <td>2023-11-23</td>
                                 <td>2023-11-29</td>
-                                <td>Hardware Support</td>
-                                <td class="ongoing bg-secondary text-dark">On Queue</td>
-                                <td><button class="button bg-primary text-white">view</button></td>
+                                <td>Hardware Replacement</td>
+                                <td class="align-middle fs-6"><span class="badge rounded-pill text-bg-secondary">On Queue</span></td>
+                                <td class="align-middle text-center">
+                                    <button class="btn btn-info view-ticket">view</button>
+                                    <button class="btn btn-warning ">Edit</button>
+                                    <button class="btn btn-danger ">Delete</button>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">TIX-20293328</th>
-                                <td>Sudden Blue Screen of PC</td>
+                                <td>Blue Screen of PC</td>
                                 <td>Cardo Dalisay</td>
                                 <td>Security Department</td>
                                 <td>2023-11-19</td>
                                 <td>2023-10-24</td>
-                                <td>Hardware Support</td>
-                                <td class="ongoing bg-secondary text-dark">On Queue</td>
-                                <td><button class="button bg-primary text-white">view</button></td>
+                                <td>HSoftware Support</td>
+                                <td class="align-middle fs-6"><span class="badge rounded-pill text-bg-secondary">On Queue</span></td>
+                                <td class="align-middle text-center">
+                                    <button class="btn btn-info view-ticket">view</button>
+                                    <button class="btn btn-warning ">Edit</button>
+                                    <button class="btn btn-danger ">Delete</button>
+                                </td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
+            <!-- Overdue TABLE -->
             <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed bg-danger-subtle text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -275,8 +322,12 @@
                             <td>2023-11-01</td>
                             <td>2023-11-18</td>
                             <td>Hardware Replacement</td>
-                            <td class="ongoing bg-danger     text-dark" >Overdue</td>
-                            <td><button class="button bg-primary text-white">view</button></td>
+                            <td class="align-middle"><span class="badge rounded-pill text-bg-danger">overdue</span></td>
+                            <td class="align-middle text-center">
+                                <button class="btn btn-info view-ticket">view</button>
+                                <button class="btn btn-warning ">Edit</button>
+                                <button class="btn btn-danger ">Delete</button>
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">TIX-20245854</th>
@@ -285,9 +336,13 @@
                             <td>HR Department</td>
                             <td>2023-11-02</td>
                             <td>2023-11-17</td>
-                            <td>Installion of MS Office</td>
-                            <td class="ongoing bg-danger text-dark">Overdue</td>
-                            <td><button class="button bg-primary text-white">view</button></td>
+                            <td>Software Support</td>
+                            <td class="align-middle"><span class="badge rounded-pill text-bg-danger">overdue</span></td>
+                            <td class="align-middle text-center">
+                                <button class="btn btn-info view-ticket">view</button>
+                                <button class="btn btn-warning ">Edit</button>
+                                <button class="btn btn-danger ">Delete</button>
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">TIX-20255793</th>
@@ -296,20 +351,28 @@
                             <td>Accounting Department</td>
                             <td>2023-10-07</td>
                             <td>2023-10-12</td>
-                            <td>Hardware Support</td>
-                            <td class="ongoing bg-danger text-dark">Overdue</td>
-                            <td><button class="button bg-primary text-white">view</button></td>
+                            <td>Software Support</td>
+                            <td class="align-middle"><span class="badge rounded-pill text-bg-danger">overdue</span></td>
+                            <td class="align-middle text-center">
+                                <button class="btn btn-info view-ticket">view</button>
+                                <button class="btn btn-warning ">Edit</button>
+                                <button class="btn btn-danger ">Delete</button>
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">TIX-20287951</th>
-                            <td>New Report</td>
+                            <td>Server Rewiring</td>
                             <td>Imong Mama</td>
                             <td>Basta Department</td>
                             <td>2023-11-04</td>
                             <td>2023-11-10</td>
-                            <td>Software Module</td>
-                            <td class="ongoing bg-danger text-dark">Overdue</td>
-                            <td><button class="button bg-primary text-white">view</button></td>
+                            <td>Hardware Support</td>
+                            <td class="align-middle"><span class="badge rounded-pill text-bg-danger">overdue</span></td>
+                            <td class="align-middle text-center">
+                                <button class="btn btn-info view-ticket">view</button>
+                                <button class="btn btn-warning ">Edit</button>
+                                <button class="btn btn-danger ">Delete</button>
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">TIX-20234585</th>
@@ -318,15 +381,20 @@
                             <td>Accounting Department</td>
                             <td>2023-10-10</td>
                             <td>2023-10-16</td>
-                            <td>Software Module</td>
-                            <td class="ongoing bg-danger text-dark">Overdue</td>
-                            <td><button class="button bg-primary text-white">view</button></td>
+                            <td>Software Support</td>
+                            <td class="align-middle"><span class="badge rounded-pill text-bg-danger">overdue</span></td>
+                            <td class="align-middle text-center">
+                                <button class="btn btn-info view-ticket">view</button>
+                                <button class="btn btn-warning ">Edit</button>
+                                <button class="btn btn-danger ">Delete</button>
+                            </td>
                         </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
             </div>
+            <!-- Completed TABLE -->
             <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed bg-success-subtle text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -358,8 +426,12 @@
                             <td>2023-11-14</td>
                             <td>2023-11-18</td>
                             <td>Hardware Support</td>
-                            <td class="ongoing bg-success text-dark" >ongoing</td>
-                            <td><button class="button bg-primary text-white">view</button></td>
+                            <td class="align-middle"><span class="badge rounded-pill text-bg-success">completed</span></td>
+                            <td class="align-middle text-center">
+                                <button class="btn btn-info view-ticket">view</button>
+                                <button class="btn btn-warning ">Edit</button>
+                                <button class="btn btn-danger ">Delete</button>
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">TIX-20231020</th>
@@ -369,8 +441,12 @@
                             <td>2023-10-20</td>
                             <td>2023-10-24</td>
                             <td>Software Support</td>
-                            <td class="ongoing bg-success text-dark">ongoing</td>
-                            <td><button class="button bg-primary text-white">view</button></td>
+                            <td class="align-middle"><span class="badge rounded-pill text-bg-success">completed</span></td>
+                            <td class="align-middle text-center">
+                                <button class="btn btn-info view-ticket">view</button>
+                                <button class="btn btn-warning ">Edit</button>
+                                <button class="btn btn-danger ">Delete</button>
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">TIX-2029877</th>
@@ -379,9 +455,13 @@
                             <td>Accounting Department</td>
                             <td>2023-10-23</td>
                             <td>2023-10-28</td>
-                            <td>Hardware Support</td>
-                            <td class="ongoing bg-success text-dark">ongoing</td>
-                            <td><button class="button bg-primary text-white">view</button></td>
+                            <td>Hardware Replacement</td>
+                            <td class="align-middle"><span class="badge rounded-pill text-bg-success">completed</span></td>
+                            <td class="align-middle text-center">
+                                <button class="btn btn-info view-ticket">view</button>
+                                <button class="btn btn-warning ">Edit</button>
+                                <button class="btn btn-danger ">Delete</button>
+                            </td>
                         </tr>
                         </tbody>
                     </table>
@@ -389,8 +469,18 @@
             </div>
         </div>
         
+    </section>  
+
+    <div class="divider"></div>
     
-    
+        <footer class="bg-light">
+        <div class="container-fluid py-2">
+            <div class="row justify-content-between">
+            <div class="col text-info fw-bold ps-4"><a href="#">Ticketing System@2023</a></div>
+            <div class="col text-end pe-4"><a href="" class="text-dark text-decoration-none">Developed by: <span class="text-primary">Erald Rowin M. Talavera   </span></a></div>
+            </div>
+        </div>
+    </footer>
     <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
