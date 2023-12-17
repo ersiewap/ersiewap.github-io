@@ -15,38 +15,14 @@ function changeModalHeaderColor(status)
         case 'completed':
             modalHeader.classList.add('bg-success-subtle');
             status.classList.add('text-dark');
-        break;  
-        default:
-            modalHeader.classList.add('bg-warning-subtle');
-            status.classList.add('text-dark');
-        break;                    
+        break;                     
     } 
 }
 
-
-
-
-// Main Content
-document.addEventListener('DOMContentLoaded', function() {
-    const rows = document.querySelectorAll('.table tbody tr');
-    rows.forEach(row => {
-    const columns = row.getElementsByTagName('td');
-    if(columns[6].textContent == 'completed'){
-        let removeButtons = columns[7].querySelectorAll(".btn-warning,.btn-danger");
-          removeButtons[0].classList.add('d-none'); //edit
-          removeButtons[1].classList.add('d-none'); //delete
-    }
-    });
-});
-
-    //View Button
-    viewButton = document.querySelectorAll('.view-ticket');
-    viewButton.forEach(function(button){
-    button.addEventListener('click', function(){
-        let row = this.parentElement.parentElement;
-        let columns = row.getElementsByTagName('td');
-
-
+function assignRowFieldValues(row){
+    let columns = row.getElementsByTagName('td');
+        
+        
         let title = document.getElementById('request-title');
         title.value = columns[0].textContent;
 
@@ -67,5 +43,58 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         changeModalHeaderColor(columns[6].textContent);
+}
+
+function showhideModalButtons(row,state =''){
+    const columns = row.getElementsByTagName('td');
+    const status = columns[6].innerHTML;
+}
+
+
+
+
+// Main Content
+    document.addEventListener('DOMContentLoaded', function() {
+    const rows = document.querySelectorAll('.table tbody tr');
+    rows.forEach(row => {
+    const columns = row.getElementsByTagName('td');
+    if(columns[6].textContent == 'completed'){
+        let removeButtons = columns[7].querySelectorAll(".btn-warning,.btn-danger");
+          removeButtons[0].classList.add('d-none'); //edit
+          removeButtons[1].classList.add('d-none'); //delete
+    }
+    });
+});
+
+    //View Button
+    viewButton = document.querySelectorAll('.view-ticket');
+    viewButton.forEach(function(button){
+    button.addEventListener('click', function(){
+        let row = this.parentElement.parentElement;
+        assignRowFieldValues(row);
+    });
+});
+
+    //edit button
+    editButton = document.querySelectorAll('.edit-ticket');
+    editButton.forEach(function(button){
+    button.addEventListener('click', function(){
+        let row = this.parentElement.parentElement;
+        assignRowFieldValues(row);
+        const inputFields = document.querySelectorAll(".form-control");
+        inputFields.forEach(input => {
+            if(input.id != "date-completed" && input.id != "field-status"){
+                input.removeAttribute()
+            }
+        });
+    });
+});
+
+    //Delete button
+    deleteButton = document.querySelectorAll('.delete-ticket');
+    deleteButton.forEach(function(button){
+    button.addEventListener('click', function(){
+        let row = this.parentElement.parentElement;
+        assignRowFieldValues(row);
     });
 });
